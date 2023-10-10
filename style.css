@@ -421,13 +421,23 @@ header {
     padding-inline: 3rem;
 }
 
-.listItem {
+.listItem a {
+    text-decoration: none;
     font-style: normal;
     font-weight: 400;
     font-size: 20px;
     line-height: 23px;
     letter-spacing: 1.5px;
     color: #2D2F30;
+}
+
+.listItem {
+    transition: transform 0.2s ease-in-out;
+}
+
+.listItem:hover {
+    transform: translateY(10px);
+    transform: scale(1.1);
 }
 
 
@@ -594,7 +604,7 @@ header {
     font-size: 16px;
     line-height: 36px;
     text-align: center;
-    color: #87898C;
+    color: #58585B;
 }
 
 
@@ -698,7 +708,7 @@ header {
     font-weight: 400;
     font-size: 20px;
     line-height: 24px;
-    color: #8B8C8C;
+    color: #535555;
     width: 90%;
 }
 
@@ -945,20 +955,29 @@ footer {
 }
 
 .footer--van ul li {
+    padding-bottom: 1rem;
+    transition: transform 0.2s ease-in-out;
+}
+
+.footer--van ul li:hover {
+   transform: translateX(10px);
+}
+
+.footer--van ul li a {
     font-family: 'Poppins';
     font-style: normal;
     font-weight: 300;
     font-size: 16px;
     line-height: 26px;
-    color: #EEEFF4;
-    padding-bottom: 1rem;
-
+    color: #ffffff;
+    text-decoration: none;
 }
 
 .footer--van ul li:first-child {
     font-weight: 500;
     font-size: 18px;
     padding-bottom: 3rem;
+    color: #fff;
 }
 
 .section--hero-two {
@@ -1010,7 +1029,7 @@ footer {
     font-size: 18px;
     line-height: 40px;
     letter-spacing: 0.5px;
-    color: #8B8C8C;
+    color: #595959;
     max-width: 70%;
 }
 
@@ -1040,7 +1059,7 @@ footer {
     font-size: 16px;
     line-height: 24px;
     letter-spacing: 0.3px;
-    color: #8B8C8C;
+    color: #595959;
     width: 100%;
     max-width: 250px;
 }
@@ -1105,7 +1124,7 @@ footer {
     font-size: 16px;
     line-height: 36px;
     letter-spacing: 0.5px;
-    color: #7C7979;
+    color: #595959;
 }
 
 .section--services-list-title {
@@ -1200,18 +1219,25 @@ footer {
     fill: #0638c0;
 
 }
+
 .contactSection {
     display: flex;
     gap: 2rem;
 }
+
 .section--contact {
     padding-block: 3rem;
 }
-.section--contact  form{
+
+.section--contact form {
+    width: 90%;
+    margin: 0 auto;
 }
+
 .form-section {
     width: 100%;
 }
+
 .form-section label {
     display: block;
     font-family: 'Poppins';
@@ -1223,9 +1249,11 @@ footer {
     padding-bottom: 1rem;
     padding-right: 1rem;
 }
+
 .form-section {
     margin-bottom: 2rem;
 }
+
 .form-section input {
     padding: 2rem;
     border-radius: 18px;
@@ -1233,7 +1261,8 @@ footer {
     border: 1px solid #284DD3;
     width: 100%;
 }
-.form-section textarea::placeholder, 
+
+.form-section textarea::placeholder,
 .form-section input::placeholder {
     font-family: 'poppins';
     font-style: normal;
@@ -1286,4 +1315,26 @@ footer {
 .section--contact form button:active {
     background-color: #0039D7;
     border-color: #0039D7;
+}
+
+.footer--bottom {
+    height: 5rem;
+    background-color: #004D7B;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.copyright p {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 26px;
+    color: #ffffff;
+}
+
+.soicals {
+    display: flex;
+    gap: 1rem;
 }
