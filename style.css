@@ -1,6 +1,27 @@
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800;900&family=Plus+Jakarta+Sans:wght@200;300;400;500;600;700;800&family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Roboto:wght@100;300;400;500;700;900&display=swap');
 
+:root {
+    --font-Xl: 7.5rem;
+    /* --font-Xl: clamp(1rem, 8vw + 1rem, 7.5rem); */
+    --font-100: 1.063rem;
+    /* 17 */
+    --font-200: 1.25rem;
+    /* 20 19 */
+    --font-300: 1.563rem;
+    /* 25 24 */
+    --font-400: clamp(1rem, 2vw + 1rem, 1.875rem);
+    /* 30 */
+    --font-500: clamp(1rem, 3vw + 0.5rem, 2.188rem);
+    /* 35 */
+    --font-600: clamp(1rem, 5vw + 0.5rem, 3rem);
+    /* 48 */
+    --font-700: clamp(1rem, 6vw + 1rem, 4.375rem);
+    /* 70 */
+}
+
+
+
 /* Document
    ========================================================================== */
 
@@ -425,7 +446,7 @@ header {
     text-decoration: none;
     font-style: normal;
     font-weight: 400;
-    font-size: 20px;
+    font-size: var(--font-200);
     line-height: 23px;
     letter-spacing: 1.5px;
     color: #2D2F30;
@@ -448,7 +469,7 @@ main {
 .logo,
 .footer_logo {
     font-weight: 700;
-    font-size: 25px;
+    font-size: var(--font-300);
     line-height: 23px;
     display: flex;
     gap: 1rem;
@@ -503,7 +524,7 @@ main {
 .section--hero-left-upper h1 {
     font-family: 'Playfair Display';
     font-weight: 700;
-    font-size: 120px;
+    font-size: var(--font-Xl);
     letter-spacing: 0.02em;
     color: #094B72;
     margin-bottom: 2rem;
@@ -512,7 +533,7 @@ main {
 .section--hero-left-upper p {
     font-family: 'Plus Jakarta Sans';
     font-weight: 500;
-    font-size: 35px;
+    font-size: var(--font-500);
     line-height: 158%;
     letter-spacing: 0.5px;
     color: #4F4F4F;
@@ -534,12 +555,21 @@ main {
 
 }
 
-
+.section--hero-left,
 .section--hero-right {
     position: relative;
+
+}
+
+
+.section--hero-right {
+    display: flex;
+    justify-content: center;
+    align-items: end;
 }
 
 .section--hero-righ_img {
+    position: relative;
     display: flex;
     justify-content: center;
     height: 100%;
@@ -565,10 +595,9 @@ main {
 }
 
 .section--hero-left-bottom p {
-
     font-family: 'Plus Jakarta Sans';
     font-weight: 400;
-    font-size: 30px;
+    font-size: var(--font-400);
     line-height: 140.5%;
     letter-spacing: 0.04em;
     color: #8B8C8C;
@@ -595,7 +624,7 @@ main {
 .section--hero-righ_titleCard-name {
     font-family: 'Plus Jakarta Sans';
     font-weight: 700;
-    font-size: 24px;
+    font-size: var(--font-300);
     line-height: 36px;
     text-align: center;
     color: #33475B;
@@ -648,7 +677,7 @@ main {
     font-family: 'Playfair Display';
     font-style: normal;
     font-weight: 700;
-    font-size: 70px;
+    font-size: var(--font-700);
     line-height: 80px;
     color: #2D2F30;
     width: 70%;
@@ -660,7 +689,7 @@ main {
     font-family: 'Poppins';
     font-style: normal;
     font-weight: 400;
-    font-size: 35px;
+    font-size: var(--font-500);
     line-height: 40px;
     width: 70%;
     color: #8B8C8C;
@@ -698,7 +727,7 @@ main {
     font-family: 'Playfair Display';
     font-style: normal;
     font-weight: 700;
-    font-size: 30px;
+    font-size: var(--font-400);
     line-height: 35px;
     color: #363940;
     width: 60%;
@@ -709,7 +738,7 @@ main {
     font-family: 'Plus Jakarta Sans';
     font-style: normal;
     font-weight: 400;
-    font-size: 20px;
+    font-size: var(--font-200);
     line-height: 24px;
     color: #535555;
     width: 90%;
@@ -719,7 +748,8 @@ main {
     background-color: #094B72;
     background-image: url("./assets/Patterns.svg");
     background-size: cover;
-    height: 30rem;
+    height: fit-content;
+    padding-block: 3rem;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -735,7 +765,7 @@ main {
     font-family: 'Playfair Display';
     font-style: normal;
     font-weight: 900;
-    font-size: 50px;
+    font-size: var(--font-600);
     line-height: 64px;
     color: #FFFFFF;
 }
@@ -744,7 +774,7 @@ main {
     font-family: 'Poppins';
     font-style: normal;
     font-weight: 400;
-    font-size: 18px;
+    font-size: var(--font-100);
     line-height: 32px;
     color: #FFFFFF;
 }
@@ -770,7 +800,7 @@ main {
     font-family: 'Poppins';
     font-style: normal;
     font-weight: 800;
-    font-size: 48px;
+    font-size: 50px;
     line-height: 64px;
     text-align: center;
     color: #FFFFFF;
@@ -780,7 +810,7 @@ main {
     font-family: 'Poppins';
     font-style: normal;
     font-weight: 400;
-    font-size: 18px;
+    font-size: var(--font-100);
     line-height: 32px;
     color: #FFFFFF;
 }
@@ -797,7 +827,7 @@ main {
     font-family: 'Playfair Display';
     font-style: normal;
     font-weight: 700;
-    font-size: 48px;
+    font-size: var(--font-600);
     line-height: 64px;
     color: #2D2F30;
     text-align: center;
@@ -813,9 +843,12 @@ main {
     margin: 0 auto;
 }
 
-.testimonial-card {}
+.testimonial-card {
+   
+}
 
 .testimonial-card-message {
+    position: relative;
     background-color: #FFF;
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
     padding: 3rem;
@@ -823,6 +856,18 @@ main {
     border-radius: 15px;
     margin-bottom: 3rem;
 }
+
+.testimonial-card-message::after {
+    content: " ";
+    display: inline-block;
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    background-color: #ffffff;
+    bottom: -15px;
+    transform: rotate(45deg);
+}
+
 
 .testimonial-card-title {
     font-family: 'Poppins';
@@ -839,7 +884,7 @@ main {
     font-family: 'Poppins';
     font-style: normal;
     font-weight: 400;
-    font-size: 18px;
+    font-size: var(--font-100);
     line-height: 24px;
     color: #4F4F4F;
 }
@@ -856,7 +901,7 @@ main {
     font-family: 'Poppins';
     font-style: normal;
     font-weight: 700;
-    font-size: 20px;
+    font-size: var(--font-200);
     line-height: 28px;
     color: #151617;
 
@@ -881,7 +926,7 @@ main {
     font-family: 'Playfair Display';
     font-style: normal;
     font-weight: 700;
-    font-size: 48px;
+    font-size: var(--font-600);
     line-height: 64px;
     color: #2D2F30;
     padding-bottom: 2rem;
@@ -892,7 +937,7 @@ main {
     font-family: 'Poppins';
     font-style: normal;
     font-weight: 400;
-    font-size: 24px;
+    font-size: var(--font-300);
     line-height: 36px;
     letter-spacing: 0.5px;
     color: #4F4F4F;
@@ -900,7 +945,7 @@ main {
     padding-bottom: 2rem;
 }
 
-.section--questions a {
+.section--questions button {
     text-decoration: none;
     appearance: button;
     background-color: #094B72;
@@ -912,7 +957,7 @@ main {
     font-family: 'Poppins';
     font-style: normal;
     font-weight: 400;
-    font-size: 24px;
+    font-size: var(--font-300);
     line-height: 1.15;
     overflow: visible;
     padding: 25px 35px;
@@ -921,11 +966,11 @@ main {
     touch-action: manipulation;
 }
 
-.section--questions a:focus {
+.section--questions button:focus {
     outline: 0;
 }
 
-.section--questions a:hover {
+.section--questions button:hover {
     background-color: #0c6091;
     border-color: #094B72;
 }
@@ -952,6 +997,7 @@ footer {
 
 .footer--van ul {
     list-style: none;
+    padding-bottom: 2rem;
 }
 
 .footer--van ul li {
@@ -975,7 +1021,7 @@ footer {
 
 .footer--van ul li:first-child {
     font-weight: 500;
-    font-size: 18px;
+    font-size: var(--font-100);
     padding-bottom: 3rem;
     color: #fff;
 }
@@ -1026,7 +1072,7 @@ footer {
     font-family: 'Poppins';
     font-style: normal;
     font-weight: 400;
-    font-size: 18px;
+    font-size: var(--font-100);
     line-height: 40px;
     letter-spacing: 0.5px;
     color: #595959;
@@ -1045,7 +1091,7 @@ footer {
     font-family: 'Playfair Display';
     font-style: normal;
     font-weight: 700;
-    font-size: 48px;
+    font-size: var(--font-600);
     line-height: 22px;
     letter-spacing: 0.5px;
     color: #363940;
@@ -1131,7 +1177,7 @@ footer {
     font-family: 'Poppins';
     font-style: normal;
     font-weight: 600;
-    font-size: 25px;
+    font-size: var(--font-300);
     line-height: 36px;
     color: #000000;
     padding-bottom: 1rem;
@@ -1200,7 +1246,7 @@ footer {
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 600;
-    font-size: 25px;
+    font-size: var(--font-300);
     line-height: 64px;
     color: #0D0C0C;
 
@@ -1211,7 +1257,7 @@ footer {
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 600;
-    font-size: 25px;
+    font-size: var(--font-300);
     line-height: 64px;
     letter-spacing: 0.5px;
     color: #797676;
@@ -1247,7 +1293,7 @@ footer {
     font-family: 'Poppins';
     font-style: normal;
     font-weight: 400;
-    font-size: 19px;
+    font-size: var(--font-200);
     line-height: 23px;
     color: #094B72;
     padding-bottom: 1rem;
@@ -1271,7 +1317,7 @@ footer {
     font-family: 'poppins';
     font-style: normal;
     font-weight: 400;
-    font-size: 18px;
+    font-size: var(--font-100);
     line-height: 23px;
     color: #CAC3C3;
 }
@@ -1298,7 +1344,7 @@ footer {
     font-family: 'Poppins';
     font-style: normal;
     font-weight: 400;
-    font-size: 24px;
+    font-size: var(--font-300);
     line-height: 1.15;
     overflow: visible;
     padding: 25px 35px;
@@ -1341,4 +1387,195 @@ footer {
 .soicals {
     display: flex;
     gap: 1rem;
+}
+
+/* ================================================ */
+
+@media screen and (max-width: 1066px) {
+    .container {
+        padding: 3rem;
+    }
+
+    .section--questions p {
+        max-width: 90%;
+    }
+
+
+
+}
+
+@media screen and (max-width: 900px) {
+    header {
+        flex-direction: column;
+        gap: 3rem;
+        height: fit-content;
+    }
+
+    .section--hero {
+        position: relative;
+        padding-top: 5rem;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+        grid-column-gap: 0px;
+        grid-row-gap: 0px;
+    }
+
+    .section--hero-right {
+        display: none;
+    }
+
+    .section--hero-left-upper p {
+        max-width: 100%;
+        font-size: clamp(1rem, 2vw + 1rem, 1.875rem);
+    }
+
+    .logoItem img {
+        height: clamp(30px, 8vw + 1rem, 65px);
+    }
+
+    .section--info {
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: 1fr;
+    }
+
+    .section--testimonial-cards {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-column-gap: 2rem;
+        width: 100%;
+    }
+
+    .footer--upper {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+
+}
+
+@media screen and (max-width: 667px) {
+    .navList {
+        display: flex;
+        flex-direction: column;
+        gap: 3rem;
+        height: fit-content;
+    }
+   
+}
+
+@media screen and (max-width: 490px) {
+    .logo-grid {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(4, 1fr);
+    }
+}
+
+
+@media screen and (max-width: 1550px) {
+    .section--info-left h2 {
+        width: 90%;
+    }
+
+    .section--info-left p {
+        width: 90%;
+    }
+
+    .section--info-right {
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(4, 1fr);
+    }
+
+
+
+}
+
+@media screen and (max-width: 736px) {
+    .section--achievement-up h3 {
+        font-size: var(--font-600);
+
+    }
+
+    .border {
+        border: none;
+    }
+
+    .section--achievement-bottom {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+}
+
+@media screen and (max-width: 570px) {
+
+    .footer--upper-nav nav {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+
+
+@media screen and (max-width: 1702px) {
+    .section--hero-right {
+        align-items: center;
+    }
+
+    .section--hero-left-upper h1 {
+        font-size: 5.5rem;
+        
+    }
+
+    .section--hero-left-upper p {
+        font-size: 2rem;
+    }
+
+    .section--hero-righ_img {
+        align-items: center;
+        height: 80%;
+    }
+
+}
+
+@media screen and (max-width: 1490px) {
+    .section--hero-left-upper h1 {
+        font-size: 4rem;
+    }
+
+    .section--hero-left-upper p {
+        font-size: 1.8rem;
+        max-width: 100%;
+    }
+
+    .section--hero-righ_img {
+        align-items: center;
+        height: 75%;
+    }
+
+}
+
+@media screen and (max-width: 1490px) {
+    .section--hero-left-upper h1 {
+        font-size: clamp(1rem, 8vw + 1rem, 7.5rem);
+    }
+    .section--hero-left-upper h1 {
+        font-size: clamp(1rem, 8vw + 1rem, 7.5rem);
+    }
+
+    .section--hero-righ_img {
+        align-items: center;
+        height: 60%;
+    }
+
+    .section--hero-left-bottom p {
+        font-size: 1.2rem;
+        font-size: clamp(1rem, 2vw + 1rem, 1.875rem);
+    }
+    .logoItem img {
+        height: 40px;
+    }
+
+
 }
