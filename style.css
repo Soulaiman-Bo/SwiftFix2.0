@@ -769,7 +769,7 @@ header {
     padding-inline: 10rem;
 }
 
-
+.section__questions h4,
 .section__questions h5 {
     font-family: 'Playfair Display';
     font-style: normal;
