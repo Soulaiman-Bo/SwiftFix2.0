@@ -792,6 +792,7 @@ header {
     max-width: 60%;
     padding-bottom: 2rem;
 }
+
 .section__questions a,
 .section__questions button {
     text-decoration: none;
@@ -813,10 +814,12 @@ header {
     text-align: center;
     touch-action: manipulation;
 }
+
 .section__questions a,
 .section__questions button:focus {
     outline: 0;
 }
+
 .section__questions a:hover,
 .section__questions button:hover {
     background-color: #0c6091;
@@ -1351,10 +1354,12 @@ footer {
     grid-row-gap: 2rem;
     margin: 0 auto;
 }
+
 .section__ourTeam {
     padding-block: 5rem;
     background-color: #F2F7FF;
 }
+
 .section__ourTeam-card {
     display: flex;
     justify-content: center;
