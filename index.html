@@ -17,6 +17,7 @@
 <body>
 
     <header class="container">
+        
         <div class="logo">
             <span>S</span>
             <a href="/">
@@ -24,10 +25,16 @@
             </a>
         </div>
 
-        <div class="header__navigation">
-            <div class="header__navigation-nav">
+        <button class="nav__expander">
+            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24"
+                style="fill: rgba(0, 0, 0, 1);">
+                <path d="M4 6h16v2H4zm0 5h16v2H4zm0 5h16v2H4z"></path>
+            </svg>
+        </button>
 
-                <nav class="navigation_nav">
+        <div class="header__navigation collapsed container">
+            <div class="header__navigation-nav">
+                <nav role="navigation" aria-label="Main menu" class="navigation_nav">
                     <ul class="navigation_nav-list">
                         <li class="navigation_nav-listItem">
                             <a href="/about.html">About</a>
@@ -52,6 +59,9 @@
 
             </div>
         </div>
+
+
+
     </header>
 
     <main>
@@ -359,12 +369,13 @@
 
     </footer>
 
+    <script src="./script.js"></script>
 </body>
 
 </html>
 
 
-Here, we share our passion and commitment for simplifying home repairs and maintenance. 
+Here, we share our passion and commitment for simplifying home repairs and maintenance.
 
 Learn about our commitment to connecting you
 with experienced professionals and providing a seamless online experience.
