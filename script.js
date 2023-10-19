@@ -7,7 +7,7 @@ let number = document.getElementById("number");
 let message = document.getElementById("message");
 let submitButton = document.getElementById("submitButton");
 let serachButton = document.getElementById("serachButton");
-let serachInput = document.querySelector(".searchInput input");
+let serachInput = document.querySelector(".searchInput");
 let sublist__head  = document.querySelector(".sublist__head ");
 let sublist = document.querySelector(".sublist");
 

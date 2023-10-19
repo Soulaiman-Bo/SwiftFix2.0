@@ -37,7 +37,7 @@ let validateButton = () => {
 }
 
 firstname.addEventListener("change", (e) => {
-    let namePattern = /^[A-Za-z]+$/;
+    let namePattern = /^[A-Za-z ]+$/;
 
     if (namePattern.test(e.target.value)) {
         error_firstname.innerHTML = ""
@@ -54,7 +54,7 @@ firstname.addEventListener("change", (e) => {
 })
 
 lastname.addEventListener("change", (e) => {
-    let namePattern = /^[A-Za-z]+$/;
+    let namePattern = /^[A-Za-z ]+$/;
 
     if (namePattern.test(e.target.value)) {
         numberOfErorrs[1] = 0
@@ -105,7 +105,7 @@ number.addEventListener("change", (e) => {
 })
 
 message.addEventListener("change", (e) => {
-    let phoneNumberPattern = /^[A-Za-z]+$/;
+    let phoneNumberPattern =  /^[A-Za-z ]+$/;
 
     if (phoneNumberPattern.test(e.target.value)) {
         numberOfErorrs[4] = 0
