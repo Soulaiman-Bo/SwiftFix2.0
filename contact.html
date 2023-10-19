@@ -74,10 +74,12 @@
                     <div class="form__input-container">
                         <label for="firstname">Firstname</label>
                         <input id="firstname" placeholder="firstname" type="text">
+                        <span class="errorMessage error_firstname"></span>
                     </div>
                     <div class="form__input-container">
                         <label for="lastname">lastname</label>
                         <input id="lastname" placeholder="lastname" type="text">
+                        <span class="errorMessage  error_lastname"></span>
                     </div>
                 </div>
 
@@ -85,19 +87,22 @@
                     <div class="form__input-container">
                         <label for="email">Email</label>
                         <input id="email" placeholder="email" type="email">
+                        <span class="errorMessage error_email"></span>
                     </div>
                     <div class="form__input-container">
                         <label for="number">Number</label>
                         <input id="number" placeholder="number" type="tel">
+                        <span class="errorMessage error_number"></span>
                     </div>
                 </div>
 
                 <div class="form__textarea">
                     <label for="message">message</label>
                     <textarea id="message" name="message" placeholder="message" rows="5" cols="33"></textarea>
+                    <span class="errorMessage error_message"></span>
                 </div>
                 
-                <button type="submit">Send</button>
+                <button id="submitButton"  type="submit">Send</button>
             </form>
         </section>
     </main>
@@ -186,7 +191,7 @@
         </div>
 
     </footer>
-    <script src="./script.js"></script>
+    <script src="./contact.js"></script>
 </body>
 
 </html>
