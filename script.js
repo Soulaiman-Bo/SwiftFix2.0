@@ -8,9 +8,13 @@ let message = document.getElementById("message");
 let submitButton = document.getElementById("submitButton");
 let serachButton = document.getElementById("serachButton");
 let serachInput = document.querySelector(".searchInput input");
+let sublist__head  = document.querySelector(".sublist__head ");
 let sublist = document.querySelector(".sublist");
+
 let nav_sublist = document.querySelector(".navigation_nav-sublist");
 
+
+sublist__head 
 
 let toggle = () => {
     navigation.classList.toggle('collapsed')
@@ -24,6 +28,7 @@ serachButton.addEventListener('click', togglesearch);
 
 let toggleDropdpwn = () => {
     nav_sublist.classList.toggle("hide")
+    sublist__head.classList.toggle("hide")
 }
 sublist.addEventListener('click', toggleDropdpwn);
 
