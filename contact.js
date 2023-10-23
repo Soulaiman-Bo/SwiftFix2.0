@@ -1,15 +1,15 @@
-let navigation = document.querySelector('.header__navigation');
-let button = document.querySelector('.nav__expander');
+// let navigation = document.querySelector('.header__navigation');
+// let button = document.querySelector('.nav__expander');
 let firstname = document.getElementById("firstname");
 let lastname = document.getElementById("lastname");
 let email = document.getElementById("email");
 let number = document.getElementById("number");
 let message = document.getElementById("message");
 let submitButton = document.getElementById("submitButton");
-let serachButton = document.getElementById("serachButton");
-let serachInput = document.querySelector(".searchInput input");
-let sublist = document.querySelector(".sublist");
-let nav_sublist = document.querySelector(".navigation_nav-sublist");
+// let serachButton = document.getElementById("serachButton");
+// let serachInput = document.querySelector(".searchInput input");
+// let sublist = document.querySelector(".sublist");
+// let nav_sublist = document.querySelector(".navigation_nav-sublist");
 
 let error_firstname = document.querySelector(".error_firstname")
 let error_lastname = document.querySelector(".error_lastname")

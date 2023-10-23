@@ -15,7 +15,6 @@ function scroll() {
 
     scrollCount += 1;
 
-
     if (scrollCount == 4) {
         clearInterval(scrollInterval);
         scrollCount = 0
