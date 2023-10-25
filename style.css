@@ -892,23 +892,24 @@ header .nav__expander {
     gap: 10px;
 }
 
-.points span {
-    height: 10px;
-    width: 10px;
+.points .dot {
+    height: 15px;
+    width: 15px;
     display: block;
     background-color: #004D7B;
     border-radius: 50%;
     transition: 0.2s ease-in;
+    cursor: pointer;
 }
 
-.points span.active {
-    height: 15px;
-    width: 15px;
+.points .dot.active {
+    height: 20px;
+    width: 20px;
 }
 
 .cardsWrapper {
     overflow: hidden;
-    width: 690px;
+    width: 648px;
     margin: 0 auto;
     padding: 2rem;
     /* border: 1px solid; */
