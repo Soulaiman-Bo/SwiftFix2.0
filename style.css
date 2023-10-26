@@ -16,6 +16,8 @@
     /* 48 */
     --font-700: 4.375rem;
     /* 70 */
+
+    --shadow-color: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 
 
@@ -94,7 +96,7 @@ header .nav__expander {
 .navigation_nav-listItem p,
 .navigation_nav-list a {
     text-decoration: none;
-    font-style: normal;
+    
     font-weight: 400;
     font-size: var(--font-200);
     line-height: 23px;
@@ -307,28 +309,6 @@ header .nav__expander {
         padding-inline: 0;
     }
 
-    /* .navigation_nav-sublist {
-        position: relative;
-        font-size: var(--font-200);
-        line-height: 23px;
-        letter-spacing: 1.5px;
-        color: #2D2F30;
-        z-index: 2000;
-        height: 100%;
-        transition: all 0.2s;
-    }
-
-    .sublist {
-        position: relative;
-        display: flex;
-        flex-direction: column;
-        gap: 1rem;
-        cursor: pointer;
-        transition: all 0.2s ease-in;
-    } */
-
-
-
 }
 
 
@@ -454,7 +434,7 @@ header .nav__expander {
     align-items: center;
     background: #FFFFFF;
     border-radius: 10px;
-    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    box-shadow: var(--shadow-color);
     z-index: 100;
 }
 
@@ -582,7 +562,6 @@ header .nav__expander {
 
 .section__info-left h2 {
     font-family: 'Playfair Display';
-    font-style: normal;
     font-weight: 700;
     font-size: var(--font-700);
     line-height: 80px;
@@ -593,7 +572,6 @@ header .nav__expander {
 
 .section__info-left p {
     font-family: 'Poppins';
-    font-style: normal;
     font-weight: 400;
     font-size: var(--font-500);
     line-height: 40px;
@@ -614,7 +592,7 @@ header .nav__expander {
 .section__info-right-card {
     background-color: #FCFCFC;
     padding: 2rem;
-    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    box-shadow: var(--shadow-color);
     border-radius: 15px;
 }
 
@@ -629,7 +607,6 @@ header .nav__expander {
 
 .info__card-title {
     font-family: 'Playfair Display';
-    font-style: normal;
     font-weight: 700;
     font-size: var(--font-400);
     line-height: 35px;
@@ -640,7 +617,6 @@ header .nav__expander {
 
 .info__card-description {
     font-family: 'Plus Jakarta Sans';
-    font-style: normal;
     font-weight: 400;
     font-size: var(--font-200);
     line-height: 24px;
@@ -765,7 +741,6 @@ header .nav__expander {
 
 .section__achievment-top h3 {
     font-family: 'Playfair Display';
-    font-style: normal;
     font-weight: 900;
     font-size: var(--font-600);
     line-height: 64px;
@@ -774,7 +749,6 @@ header .nav__expander {
 
 .section__achievment-top p {
     font-family: 'Poppins';
-    font-style: normal;
     font-weight: 400;
     font-size: var(--font-100);
     line-height: 32px;
@@ -796,7 +770,6 @@ header .nav__expander {
 
 .section__achievment-colum span {
     font-family: 'Poppins';
-    font-style: normal;
     font-weight: 800;
     font-size: 50px;
     line-height: 64px;
@@ -806,7 +779,6 @@ header .nav__expander {
 
 .section__achievment-colum p {
     font-family: 'Poppins';
-    font-style: normal;
     font-weight: 400;
     font-size: var(--font-100);
     line-height: 32px;
@@ -858,7 +830,6 @@ header .nav__expander {
 .section__faq h4,
 .section__testimonial h4 {
     font-family: 'Playfair Display';
-    font-style: normal;
     font-weight: 700;
     font-size: var(--font-600);
     line-height: 64px;
@@ -918,7 +889,7 @@ header .nav__expander {
 .testimonial__card-message {
     position: relative;
     background-color: #FFF;
-    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    box-shadow: var(--shadow-color);
     padding: 3rem;
     text-align: center;
     border-radius: 15px;
@@ -940,7 +911,6 @@ header .nav__expander {
 .testimonial__card-title {
     display: block;
     font-family: 'Poppins';
-    font-style: normal;
     font-weight: 500;
     font-size: 22px;
     line-height: 28px;
@@ -951,7 +921,6 @@ header .nav__expander {
 
 .testimonial__card-body {
     font-family: 'Poppins';
-    font-style: normal;
     font-weight: 400;
     font-size: var(--font-100);
     line-height: 24px;
@@ -969,7 +938,6 @@ header .nav__expander {
 .testimonial__card-profile-name {
     display: block;
     font-family: 'Poppins';
-    font-style: normal;
     font-weight: 700;
     font-size: var(--font-200);
     line-height: 28px;
@@ -979,7 +947,6 @@ header .nav__expander {
 .section__outeam-job,
 .testimonial__card-profile-job {
     font-family: 'Poppins';
-    font-style: normal;
     font-weight: 400;
     font-size: 16px;
     line-height: 24px;
@@ -1030,7 +997,6 @@ header .nav__expander {
 .section__questions h4,
 .section__questions h5 {
     font-family: 'Playfair Display';
-    font-style: normal;
     font-weight: 700;
     font-size: var(--font-600);
     line-height: 64px;
@@ -1041,7 +1007,6 @@ header .nav__expander {
 
 .section__questions p {
     font-family: 'Poppins';
-    font-style: normal;
     font-weight: 400;
     font-size: var(--font-300);
     line-height: 36px;
@@ -1062,7 +1027,6 @@ header .nav__expander {
     color: #FFFFFF;
     cursor: pointer;
     font-family: 'Poppins';
-    font-style: normal;
     font-weight: 400;
     font-size: var(--font-300);
     line-height: 1.15;
@@ -1147,7 +1111,6 @@ footer {
 
 .footer__nav ul li a {
     font-family: 'Poppins';
-    font-style: normal;
     font-weight: 300;
     font-size: 16px;
     line-height: 26px;
@@ -1183,7 +1146,6 @@ footer {
 
 .copyright p {
     font-family: 'Poppins';
-    font-style: normal;
     font-weight: 300;
     font-size: 16px;
     line-height: 26px;
@@ -1243,7 +1205,6 @@ footer {
 
 .section__hero-two h1 {
     font-family: 'Playfair Display';
-    font-style: normal;
     font-weight: 700;
     font-size: 49px;
     line-height: 120%;
@@ -1287,7 +1248,6 @@ footer {
 .form__input-container label {
     display: block;
     font-family: 'Poppins';
-    font-style: normal;
     font-weight: 400;
     font-size: var(--font-200);
     line-height: 23px;
@@ -1317,7 +1277,6 @@ input.error {
 .form__textarea textarea::placeholder,
 .form__input-container input::placeholder {
     font-family: 'poppins';
-    font-style: normal;
     font-weight: 400;
     font-size: var(--font-100);
     line-height: 23px;
@@ -1362,7 +1321,6 @@ input.error {
     color: #FFFFFF;
     cursor: pointer;
     font-family: 'Poppins';
-    font-style: normal;
     font-weight: 400;
     font-size: var(--font-300);
     line-height: 1.15;
@@ -1409,7 +1367,6 @@ input.error {
 
 .section__aboutUs-left h2 {
     font-family: 'Playfair Display';
-    font-style: normal;
     font-weight: 700;
     font-size: 41px;
     line-height: 120%;
@@ -1421,7 +1378,6 @@ input.error {
 
 .section__aboutUs-left p {
     font-family: 'Poppins';
-    font-style: normal;
     font-weight: 400;
     font-size: var(--font-100);
     line-height: 40px;
@@ -1436,7 +1392,6 @@ input.error {
 
 .section__services-list-number {
     font-family: 'Poppins';
-    font-style: normal;
     font-size: 16px;
     line-height: 36px;
     letter-spacing: 0.5px;
@@ -1445,7 +1400,6 @@ input.error {
 
 .section__services-list-title {
     font-family: 'Poppins';
-    font-style: normal;
     font-weight: 600;
     font-size: var(--font-300);
     line-height: 36px;
@@ -1455,7 +1409,6 @@ input.error {
 
 .modal__opener {
     font-family: 'Roboto';
-    font-style: normal;
     font-weight: 600;
     font-size: var(--font-300);
     line-height: 64px;
@@ -1521,7 +1474,6 @@ dialog[open] {
 
 .contentBox p {
     font-family: 'Poppins';
-    font-style: normal;
     font-weight: 400;
     font-size: 1rem;
     line-height: 30px;
@@ -1546,7 +1498,6 @@ dialog[open] {
     color: #FFFFFF;
     cursor: pointer;
     font-family: 'Poppins';
-    font-style: normal;
     font-weight: 400;
     font-size: var(--font-300);
     line-height: 1.15;
@@ -1631,7 +1582,7 @@ dialog[open]::backdrop {
     padding-inline: 3rem;
     padding-block: 2rem;
     background-color: #FCFCFC;
-    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    box-shadow: var(--shadow-color);
     height: 350px;
     width: 350px;
     display: flex;
@@ -1644,7 +1595,6 @@ dialog[open]::backdrop {
     flex-direction: column;
     align-items: start;
     font-family: 'Roboto';
-    font-style: normal;
     font-weight: 600;
     font-size: var(--font-300);
     line-height: 64px;
@@ -1654,7 +1604,6 @@ dialog[open]::backdrop {
 
 .section__services-text p {
     font-family: 'Roboto';
-    font-style: normal;
     font-weight: 600;
     font-size: var(--font-300);
     line-height: 64px;
@@ -1697,12 +1646,11 @@ dialog[open]::backdrop {
 .section__aboutUs-card {
     padding: 2rem;
     background-color: #FCFCFC;
-    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    box-shadow: var(--shadow-color);
 }
 
 .section__aboutUs-number {
     font-family: 'Playfair Display';
-    font-style: normal;
     font-weight: 700;
     font-size: var(--font-600);
     line-height: 22px;
@@ -1713,7 +1661,6 @@ dialog[open]::backdrop {
 
 .section__aboutUs-text {
     font-family: 'Plus Jakarta Sans';
-    font-style: normal;
     font-weight: 400;
     font-size: 16px;
     line-height: 24px;
@@ -1781,13 +1728,15 @@ dialog[open]::backdrop {
 .faq__wrapper {
     display: flex;
     justify-content: center;
+    flex-direction: column;
     align-items: center;
     flex-wrap: wrap;
     gap: 3rem;
 }
 
 .section__faq-item {
-    max-width: 600px;
+    max-width: 900px;
+    width: 90%;
 }
 
 .faq__head {
@@ -1804,7 +1753,6 @@ dialog[open]::backdrop {
 
 .faq__head span {
     font-family: 'Poppins';
-    font-style: normal;
     font-weight: 300;
     font-size: 16px;
     line-height: 26px;

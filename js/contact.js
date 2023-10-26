@@ -25,7 +25,6 @@ let numberOfErorrs = [0, 0, 0, 0, 0]
 
 
 let validateButton = () => {
-    console.log(numberOfErorrs);
     for (let i = 0; i < numberOfErorrs.length; i++) {
         if (numberOfErorrs[i] == 1) {
             submitButton.disabled = true
@@ -37,9 +36,9 @@ let validateButton = () => {
 }
 
 firstname.addEventListener("change", (e) => {
-    let namePattern = /^[A-Za-z ]+$/;
+    let namePattern = /^[A-Za-z ]{3,}$/;
 
-    if (namePattern.test(e.target.value)) {
+    if (namePattern.test(e.target.value.trim())) {
         error_firstname.innerHTML = ""
         numberOfErorrs[0] = 0
         firstname.classList.remove('error')
@@ -48,15 +47,15 @@ firstname.addEventListener("change", (e) => {
         numberOfErorrs[0] = 1
         firstname.classList.remove('success')
         firstname.classList.add('error')
-        error_firstname.innerHTML = "FirstName should only include letters"
+        error_firstname.innerHTML = "FirstName should be more tha 3 characters and only include letters"
     }
     validateButton()
 })
 
 lastname.addEventListener("change", (e) => {
-    let namePattern = /^[A-Za-z ]+$/;
+    let namePattern =  /^[A-Za-z ]{3,}$/;
 
-    if (namePattern.test(e.target.value)) {
+    if (namePattern.test(e.target.value.trim())) {
         numberOfErorrs[1] = 0
         error_lastname.innerHTML = ""
         lastname.classList.remove('error')
@@ -65,7 +64,7 @@ lastname.addEventListener("change", (e) => {
         numberOfErorrs[1] = 1
         lastname.classList.remove('success')
         lastname.classList.add('error')
-        error_lastname.innerHTML = "Last Name should only include letters"
+        error_lastname.innerHTML = "Last Name should be more tha 3 characters and only include letters"
     }
     validateButton()
 })
@@ -105,9 +104,9 @@ number.addEventListener("change", (e) => {
 })
 
 message.addEventListener("change", (e) => {
-    let phoneNumberPattern =  /^[A-Za-z ]+$/;
+    let phoneNumberPattern =   /^[A-Za-z ]{3,}$/;
 
-    if (phoneNumberPattern.test(e.target.value)) {
+    if (phoneNumberPattern.test(e.target.value.trim())) {
         numberOfErorrs[4] = 0
         error_message.innerHTML = ""
         message.classList.remove('error')
